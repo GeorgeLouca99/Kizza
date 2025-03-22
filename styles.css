@@ -14,10 +14,11 @@
     --second-bg-color: #131313;
     --text-color: white;
     --main-color: #00ffee;
+    --bgcolor: red;
 }
 
 body {
-    background-color: pink;
+    background: linear-gradient(to bottom, #e0bbd2, #b33b72);
     margin: 0;
     padding: 0;
     display: flex;
@@ -44,9 +45,9 @@ body {
 
 .hellokittyLeft:hover {
     background-image: url('HelloKitty2.jpg'); /* Image on hover */
-    box-shadow: 0 0 25px var(--text-color), /* Increased brightness */
-                0 0 50px var(--text-color),
-                0 0 100px var(--text-color);
+    box-shadow: 0 0 25px var(--bgcolor), /* Increased brightness */
+                0 0 50px var(--bgcolor),
+                0 0 100px var(--bgcolor);
 }
 
 .title {
@@ -59,15 +60,15 @@ body {
     text-align: center;
     white-space: nowrap; /* Prevents text from wrapping */
     color: white;
-    text-shadow: 0 0 25px var(--text-color);
+    text-shadow: 0 0 25px var(--bgcolor);
     transition: transform 0.3s ease; /* Adds smooth transition */
 }
 
 .title:hover {
     transform: translateX(-50%) scale(1.1); /* Ensure translateX remains */
-    text-shadow: 0 0 25px var(--text-color),
-                 0 0 50px var(--text-color),
-                 0 0 100px var(--text-color);
+    text-shadow: 0 0 25px var(--bgcolor),
+                 0 0 50px var(--bgcolor),
+                 0 0 100px var(--bgcolor);
 }
 
 /* CSS to make iframe responsive */
@@ -91,9 +92,9 @@ body {
 
 .image-container img:hover {
     transform: scale(1.1); /* Makes the image slightly bigger when hovered */
-    box-shadow: 0  25px var(--text-color),
-                 0 0 50px var(--text-color),
-                 0 0 100px var(--text-color);
+    box-shadow: 0  25px var(--bgcolor),
+                 0 0 50px var(--bgcolor),
+                 0 0 100px var(--bgcolor);
 }
 
 /* Second image */
@@ -117,7 +118,7 @@ body {
 
 .image-container2 img:hover {
     transform: scale(1.1); /* Makes the image slightly bigger when hovered */
-    box-shadow: 0  25px var(--text-color),
-                 0 0 50px var(--text-color),
-                 0 0 100px var(--text-color);
+    box-shadow: 0  25px var(--bgcolor),
+                 0 0 50px var(--bgcolor),
+                 0 0 100px var(--bgcolor);
 }
