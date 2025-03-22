@@ -96,29 +96,3 @@ body {
                  0 0 50px var(--bgcolor),
                  0 0 100px var(--bgcolor);
 }
-
-/* Second image */
-
-.image-container2 {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
-    grid-gap: 200px; /* Space between images */
-    margin-top: -350px; /* Add margin to avoid overlap with title */
-    width: 0px; /* Set a fixed width for the grid */
-}
-
-/* Optional: Add a hover effect to make the image grow on hover */
-.image-container2 img {
-    width: 500px; /* Adjust width to make the image bigger */
-    height: 350px; /* Adjust height to match the new width */
-    object-fit: cover; /* Ensures the image covers the area without stretching */
-    border-radius: 8px; /* Optional: Adds rounded corners to the images */
-    transition: transform 0.3s ease-in-out; /* Adds smooth scaling effect */
-}
-
-.image-container2 img:hover {
-    transform: scale(1.1); /* Makes the image slightly bigger when hovered */
-    box-shadow: 0  25px var(--bgcolor),
-                 0 0 50px var(--bgcolor),
-                 0 0 100px var(--bgcolor);
-}
